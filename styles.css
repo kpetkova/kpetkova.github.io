@@ -1,0 +1,258 @@
+﻿/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.17em;
+}
+
+h5 {
+    font-size: .83em;
+}
+
+h6 {
+    font-size: .75em;
+}
+/**********************************************************/
+@font-face {
+    font-family: 'Ruslan Display';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Ruslan Display'), local('RuslanDisplay'), url(http://fonts.gstatic.com/s/ruslandisplay/v6/SREdhlyLNUfU1VssRBfs3nfn3bHKzcZUG_lDZfW_WhE.woff) format('woff');
+}
+
+body {
+    background: #1049a9;
+    color: rgba(246,246,246,1);
+    font-family: 'Ruslan Display', cursive;
+    text-align: center;
+}
+
+#wrapper {
+    margin: 30px;
+}
+
+header {
+    clear: both;
+    text-align: center;
+}
+
+nav {
+    display: inline-block;
+    width: 100%;
+}
+
+#Menu {
+    list-style: none;
+    font-size: 16px;
+    font-weight: Bold;
+    height: 30px;
+    border: solid;
+    border-radius: 11px;
+    width: 837px;
+    margin: auto;
+}
+
+    #Menu a {
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    #Menu li {
+        padding: 10px;
+        border-right: solid;
+        display: list-item;
+    }
+
+        #Menu li:last-child {
+            border: 0;
+            border-radius: 0 6px 6px 0;
+        }
+
+        #Menu li:first-child {
+            border-left: 0px;
+            border-radius: 6px 0 0 6px;
+        }
+
+    #Menu ul {
+        display: none;
+    }
+
+#Menu {
+    list-style: none;
+}
+
+    #Menu li:hover {
+        background: rgb(255, 206, 0);
+    }
+
+        #Menu li:hover a {
+            color: #fff;
+        }
+
+a {
+    color: #ff6a00;
+}
+
+
+#Menu li:hover > ul {
+    display: block;
+}
+
+#Menu li ul {
+    margin: 4px 0 0 -28px;
+    padding: 0;
+    position: absolute;
+    z-index: 5;
+    padding-top: 6px;
+}
+
+#Menu li {
+    float: left;
+    padding: 7px 3%;
+    width: 13%;
+}
+
+    #Menu li ul li {
+        float: none;
+        margin: 0;
+        display: inline;
+        padding: 0 0 2px 0;
+        background: none;
+        border: none;
+    }
+
+        #Menu li ul li a {
+            display: block;
+            padding: 6px 10px;
+            background: rgb(255, 206, 0);
+            white-space: nowrap;
+            width: 150px;
+            border-bottom:solid 1px #fff;
+        }
+
+            #Menu li ul li a:hover {
+                background: blue;
+            }
+
+#Menu li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+	width: 13%;
+}
+
+#Menu ul {
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+section {
+    clear: both;
+    text-align: center;
+    margin-top: 50px;
+}
+
+article {
+    background: #ff6a00;
+    border: groove 3px #DADA11;
+    width: 50%;
+    border-radius: 20px;
+    padding: 20px;
+    display: inline-block;
+}
+
+    article h2 {
+        font-size: 1.5em;
+        letter-spacing: 2px;
+        line-height: 1.2em;
+    }
+
+        article h2::after, article h2::before {
+            content: '"';
+        }
+
+.creds img {
+    border: groove 3px #dada11;
+    border-radius: 20px;
+}
+
+.creds div {
+    border: groove 3px #dada11;
+    border-radius: 20px;
+    width: 172px;
+    height: 136px;
+    color: rgba(0,0,0,0);
+    background:#1049a9;
+    font-size: 181px;
+    text-shadow: 0px 14px 4px rgb(218,218,17);
+    display: inline-block;
+}
+
+#contacts img {
+    width: 100%;
+}
+
+.anchor {
+    position: relative;
+    top: 0px;
+}
